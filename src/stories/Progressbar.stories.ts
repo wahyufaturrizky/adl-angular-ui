@@ -16,6 +16,10 @@ export default {
       options: ['primary', 'accent', 'warn'],
       control: { type: 'radio' },
     },
+    mode: {
+      options: ['determinate', 'indeterminate', 'buffer', 'query'],
+      control: { type: 'radio' },
+    },
   },
 } as Meta;
 
@@ -23,9 +27,10 @@ const Template: Story<ProgressBarComponent> = (args: ProgressBarComponent) => ({
   props: args,
 });
 
-export const Determinate = Template.bind({});
-Determinate.args = {
+export const BasicProgressBar = Template.bind({});
+BasicProgressBar.args = {
   mode: 'determinate',
   value: 35,
-  color: 'primary', // primary | accent | warn
+  bufferValue: 65,
+  color: 'warn', // primary | accent | warn
 };
