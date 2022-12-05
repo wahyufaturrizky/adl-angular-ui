@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { ThemePalette } from '@angular/material/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
 })
-export class ButtonComponent {
+export class ButtonComponent implements OnInit {
   @Input()
   label: string = 'Text goes here ';
 
@@ -22,4 +22,8 @@ export class ButtonComponent {
   onEventChange(event: any) {
     this.eventChange.emit(event);
   }
+
+  constructor() {}
+
+  ngOnInit(): void {}
 }
