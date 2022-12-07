@@ -16,16 +16,16 @@
     ],
     "injectables": [
         {
-            "name": "NgUiService",
-            "id": "injectable-NgUiService-6c9a7805124423d7648aa146a5f0a9e1134846f0cbf0bd2ab2545758946c5ea6ad9ecc4facd6756bdcb6e7298e03354412217fc2049e67bc22e39e7e79db4136",
-            "file": "projects/ng-ui/src/lib/ng-ui.service.ts",
+            "name": "PatternLibService",
+            "id": "injectable-PatternLibService-96b81df60554001546d6f323fe084da5b909deb4e681b749837286ed71051a7dd6b2e724275029d0a564ab8d626694317c60e1520fbc41f88d47c5ce3684d83f",
+            "file": "projects/pattern-lib/src/lib/pattern-lib.service.ts",
             "properties": [],
             "methods": [],
             "deprecated": false,
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class NgUiService {\n\n  constructor() { }\n}\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class PatternLibService {\n\n  constructor() { }\n}\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -42,57 +42,6 @@
     "classes": [],
     "directives": [],
     "components": [
-        {
-            "name": "AppComponent",
-            "id": "component-AppComponent-c4a96b81b5bb79cf2fb2ff650c43459000eb34876f4f08500357da5774ca673fedab0cf93e6dfdc3d64d65e56afd78f8ef72046fe156b2afbb84ef8a91b8007c",
-            "file": "src/app/app.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-root",
-            "styleUrls": [
-                "./app.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./app.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "title",
-                    "defaultValue": "'demo'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 9
-                }
-            ],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'demo';\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./app.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<button mat-stroked-button>button</button>\n"
-        },
         {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
@@ -219,14 +168,14 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-ca47bc822d9c3d13c2403e7eedc0c7560a410df4caee751927a567668ae5fe1888d00db2e9a2c1225e00b38f2603d4462a040b52a09d92f5e0fc289fea2f524e-1",
-            "file": "projects/ng-ui/src/lib/button/button.component.ts",
+            "id": "component-ButtonComponent-b28f66b6502d9feff4ae38b2f616a3b909119371dfd3cd0ce769a3a27a4e1eb20c42850fbe827e929c775cf64aa04fdf5e469e73503b13e146c2162a7836776f-1",
+            "file": "projects/pattern-lib/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "nu-button",
+            "selector": "pl-button",
             "styleUrls": [
                 "./button.component.scss"
             ],
@@ -241,7 +190,7 @@
                     "defaultValue": "'primary'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "line": 13,
                     "type": "ThemePalette",
                     "decorators": []
                 },
@@ -250,17 +199,17 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 14,
                     "type": "boolean",
                     "decorators": []
                 },
                 {
                     "name": "label",
-                    "defaultValue": "'Text goes here '",
+                    "defaultValue": "'Text goes here'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
-                    "type": "string",
+                    "line": 12,
+                    "type": "string | null",
                     "decorators": []
                 }
             ],
@@ -270,7 +219,7 @@
                     "defaultValue": "new EventEmitter()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 20,
+                    "line": 15,
                     "type": "EventEmitter<any>"
                 }
             ],
@@ -282,7 +231,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 28,
+                    "line": 17,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -299,7 +248,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 22,
+                    "line": 19,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -322,7 +271,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'nu-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  @Input()\n  label: string = 'Text goes here ';\n\n  @Input()\n  color: ThemePalette = 'primary';\n\n  @Input()\n  disabled: boolean = false;\n\n  @Output()\n  eventChange: EventEmitter<any> = new EventEmitter();\n\n  onEventChange(event: any) {\n    this.eventChange.emit(event);\n  }\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<any> = new EventEmitter();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: any) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -337,7 +286,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 24
+                "line": 9
             },
             "implements": [
                 "OnInit"
@@ -346,133 +295,6 @@
             "duplicateId": 1,
             "duplicateName": "ButtonComponent-1",
             "templateData": "<button\n  mat-button\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  (click)=\"onEventChange($event)\"\n>\n  {{ label }}\n</button>\n"
-        },
-        {
-            "name": "ButtonRaisedComponent",
-            "id": "component-ButtonRaisedComponent-6655449df57b27d122cbc15c4047704bcc799ccc57747ac8a2c60600626ecea0a5fc83fad7bd187fb3b377d428ccf100aa90862f49439f04f4e142eb659cd097",
-            "file": "projects/ng-ui/src/lib/button-raised/button-raised.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "nu-button-raised",
-            "styleUrls": [
-                "./button-raised.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./button-raised.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "color",
-                    "defaultValue": "'primary'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 14,
-                    "type": "ThemePalette",
-                    "decorators": []
-                },
-                {
-                    "name": "disabled",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 17,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "name": "label",
-                    "defaultValue": "'Text goes here '",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 11,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "eventChange",
-                    "defaultValue": "new EventEmitter()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "EventEmitter<any>"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 28,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "onEventChange",
-                    "args": [
-                        {
-                            "name": "event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 22,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "name": "event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'nu-button-raised',\n  templateUrl: './button-raised.component.html',\n  styleUrls: ['./button-raised.component.scss'],\n})\nexport class ButtonRaisedComponent implements OnInit {\n  @Input()\n  label: string = 'Text goes here ';\n\n  @Input()\n  color: ThemePalette = 'primary';\n\n  @Input()\n  disabled: boolean = false;\n\n  @Output()\n  eventChange: EventEmitter<any> = new EventEmitter();\n\n  onEventChange(event: any) {\n    this.eventChange.emit(event);\n  }\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./button-raised.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 24
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<button\n  mat-raised-button\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  (click)=\"onEventChange($event)\"\n>\n  {{ label }}\n</button>\n"
         },
         {
             "name": "HeaderComponent",
@@ -546,59 +368,6 @@
                 }
             ],
             "stylesData": ""
-        },
-        {
-            "name": "NgUiComponent",
-            "id": "component-NgUiComponent-19767ef5a6bc70852db35b1bdbdde2d324128a1ce3042175ac8cedc7841fff1cadb39351182bf70c236f05a36ff3a296a0a88ebf299349befc75b80649a556c1",
-            "file": "projects/ng-ui/src/lib/ng-ui.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "nu-ng-ui",
-            "styleUrls": [],
-            "styles": [],
-            "template": "<p>ng-ui works!</p>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'nu-ng-ui',\n  template: ` <p>ng-ui works!</p> `,\n  styles: [],\n})\nexport class NgUiComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ]
         },
         {
             "name": "PageComponent",
@@ -679,62 +448,49 @@
                 }
             ],
             "stylesData": ""
+        },
+        {
+            "name": "PatternLibComponent",
+            "id": "component-PatternLibComponent-44e83aed784d74c184c293fb97c0ea247832263c86865d04d95650b986ff01bd5ee23b2f2fdb9bdb5cbdb6a687f6d3f98c66541ac0f5d7af316fea93a30514c4",
+            "file": "projects/pattern-lib/src/lib/pattern-lib.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-pattern-lib",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  pattern-lib works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'pl-pattern-lib',\n  template: `\n    <p>\n      pattern-lib works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class PatternLibComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
         }
     ],
     "modules": [
         {
-            "name": "AppModule",
-            "id": "module-AppModule-29ecc5abb39658804960f6f61a154ff38c72e94cb8dc13d550f0c2e9b8e8cac798fea381932f3082f808fc6879ee63e8e4f2912b8f5e856a514f20509ab382b6",
+            "name": "PatternLibModule",
+            "id": "module-PatternLibModule-b03f47fb8352e3c5e2d288f68d38ae21b522d75ca1009c65e43fe7ea589dfe47a26733ee460a6417eee3f7efc9b089167b9920adfc731f5481b21af4ad6391a7",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "src/app/app.module.ts",
+            "file": "projects/pattern-lib/src/lib/pattern-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\n\nimport { MatButtonModule } from '@angular/material/button';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, MatButtonModule],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
-            "children": [
-                {
-                    "type": "providers",
-                    "elements": []
-                },
-                {
-                    "type": "declarations",
-                    "elements": [
-                        {
-                            "name": "AppComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "imports",
-                    "elements": []
-                },
-                {
-                    "type": "exports",
-                    "elements": []
-                },
-                {
-                    "type": "bootstrap",
-                    "elements": [
-                        {
-                            "name": "AppComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "classes",
-                    "elements": []
-                }
-            ]
-        },
-        {
-            "name": "NgUiModule",
-            "id": "module-NgUiModule-0aabe5ab57c032b6974357a477b6f9c91f895013b9b408579a6b73557b77a6fdb320952810bcc49efd60b632aa53e4df9672f534961881bc217749de6e3b78a2",
-            "description": "",
-            "deprecationMessage": "",
-            "deprecated": false,
-            "file": "projects/ng-ui/src/lib/ng-ui.module.ts",
-            "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { NgUiComponent } from './ng-ui.component';\nimport { ButtonComponent } from './button/button.component';\n\nimport { MatButtonModule } from '@angular/material/button';\nimport { ButtonRaisedComponent } from './button-raised/button-raised.component';\nimport { CommonModule } from '@angular/common';\n\n@NgModule({\n  declarations: [NgUiComponent, ButtonComponent, ButtonRaisedComponent],\n  imports: [MatButtonModule, CommonModule],\n  exports: [NgUiComponent, ButtonRaisedComponent, ButtonComponent],\n})\nexport class NgUiModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { PatternLibComponent } from './pattern-lib.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CommonModule } from '@angular/common';\nimport { MatButtonModule } from '@angular/material/button';\n\n@NgModule({\n  declarations: [PatternLibComponent, ButtonComponent],\n  imports: [CommonModule, MatButtonModule],\n  exports: [PatternLibComponent, ButtonComponent],\n})\nexport class PatternLibModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -747,10 +503,7 @@
                             "name": "ButtonComponent"
                         },
                         {
-                            "name": "ButtonRaisedComponent"
-                        },
-                        {
-                            "name": "NgUiComponent"
+                            "name": "PatternLibComponent"
                         }
                     ]
                 },
@@ -762,10 +515,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "ButtonRaisedComponent"
-                        },
-                        {
-                            "name": "NgUiComponent"
+                            "name": "PatternLibComponent"
                         }
                     ]
                 },
@@ -853,26 +603,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Raised",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/ButtonRaised.stories.tsx",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Raised",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/BasicButton.stories.tsx",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "TemplateButtonRaisedComponent.bind({})"
-            },
-            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -896,21 +626,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Button.stories.ts",
+                "file": "stories/BasicButton.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/ButtonRaised.stories.tsx",
+                "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ButtonRaisedComponent>",
-                "defaultValue": "(\n  args: ButtonRaisedComponent\n) => ({\n  component: ButtonRaisedComponent,\n  props: args,\n})"
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -931,26 +661,6 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/BasicButton.stories.tsx",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
-            },
-            {
-                "name": "TemplateButtonRaisedComponent",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/BasicButton.stories.tsx",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonRaisedComponent>",
-                "defaultValue": "(\n  args: ButtonRaisedComponent\n) => ({\n  component: ButtonRaisedComponent,\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -969,16 +679,6 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Raised",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/BasicButton.stories.tsx",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "TemplateButtonRaisedComponent.bind({})"
-                },
-                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -987,16 +687,6 @@
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
-                },
-                {
-                    "name": "TemplateButtonRaisedComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/BasicButton.stories.tsx",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonRaisedComponent>",
-                    "defaultValue": "(\n  args: ButtonRaisedComponent\n) => ({\n  component: ButtonRaisedComponent,\n  props: args,\n})"
                 }
             ],
             "stories/Button.stories.ts": [
@@ -1114,28 +804,6 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
-            ],
-            "stories/ButtonRaised.stories.tsx": [
-                {
-                    "name": "Raised",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/ButtonRaised.stories.tsx",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/ButtonRaised.stories.tsx",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonRaisedComponent>",
-                    "defaultValue": "(\n  args: ButtonRaisedComponent\n) => ({\n  component: ButtonRaisedComponent,\n  props: args,\n})"
-                }
             ]
         },
         "groupedFunctions": {},
@@ -1144,20 +812,11 @@
     },
     "routes": [],
     "coverage": {
-        "count": 3,
+        "count": 4,
         "status": "low",
         "files": [
             {
-                "filePath": "projects/ng-ui/src/lib/button-raised/button-raised.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ButtonRaisedComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/8",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ng-ui/src/lib/button/button.component.ts",
+                "filePath": "projects/pattern-lib/src/lib/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
@@ -1166,28 +825,19 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ng-ui/src/lib/ng-ui.component.ts",
+                "filePath": "projects/pattern-lib/src/lib/pattern-lib.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "NgUiComponent",
+                "name": "PatternLibComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "projects/ng-ui/src/lib/ng-ui.service.ts",
+                "filePath": "projects/pattern-lib/src/lib/pattern-lib.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
-                "name": "NgUiService",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "AppComponent",
+                "name": "PatternLibService",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
@@ -1207,27 +857,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Raised",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/BasicButton.stories.tsx",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
                 "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/BasicButton.stories.tsx",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "TemplateButtonRaisedComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1274,26 +904,6 @@
             },
             {
                 "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/ButtonRaised.stories.tsx",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Raised",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/ButtonRaised.stories.tsx",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

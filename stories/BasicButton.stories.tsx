@@ -1,8 +1,7 @@
 import { MatButtonModule } from "@angular/material/button";
 import { moduleMetadata } from "@storybook/angular";
-import { Story, Meta } from "@storybook/angular/types-6-0";
-import { ButtonRaisedComponent } from "projects/ng-ui/src/lib/button-raised/button-raised.component";
-import { ButtonComponent } from "../projects/ng-ui/src/lib/button/button.component";
+import { Meta, Story } from "@storybook/angular/types-6-0";
+import { ButtonComponent } from "projects/pattern-lib/src/lib/button/button.component";
 
 export default {
   title: "ADL ANGULAR MATERIAL/Buttons",
@@ -28,22 +27,8 @@ const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: args,
 });
 
-const TemplateButtonRaisedComponent: Story<ButtonRaisedComponent> = (
-  args: ButtonRaisedComponent
-) => ({
-  component: ButtonRaisedComponent,
-  props: args,
-});
-
 export const Basic = Template.bind({});
 Basic.args = {
-  label: "Button",
-  disabled: false,
-  color: "primary",
-};
-
-export const Raised = TemplateButtonRaisedComponent.bind({});
-Raised.args = {
   label: "Button",
   disabled: false,
   color: "primary",

@@ -1,5 +1,5 @@
 {
-  "extends": "../projects/ng-ui/tsconfig.lib.json",
+  "extends": "../projects/pattern-lib/tsconfig.lib.json",
   "compilerOptions": {
     "types": ["node"],
     "allowSyntheticDefaultImports": true
@@ -9,6 +9,6 @@
     "../src/**/*.spec.ts",
     "../projects/**/*.spec.ts"
   ],
-  "include": ["../stories/**/*", "../src/**/*", "../projects/**/*"],
+  "include": ["../src/**/*", "../projects/**/*", "../stories/**/*"],
   "files": ["./typings.d.ts"]
 }

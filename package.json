@@ -1,5 +1,5 @@
 {
-  "name": "adl-ng-ui",
+  "name": "adl-angular-ui",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
     "build-storybook": "npm run docs:json && build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-lib": "ng build --project=ng-ui && cd ./dist/ng-ui && npm link",
-    "homepage": "http://wahyufaturrizky.github.io/adl-ng-ui"
+    "homepage": "http://wahyufaturrizky.github.io/adl-angular-ui"
   },
   "private": true,
   "dependencies": {
