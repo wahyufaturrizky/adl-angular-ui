@@ -14,7 +14,7 @@
     "build-lib": "ng build --project=pattern-lib && cd ./dist/pattern-lib && npm link",
     "homepage": "http://wahyufaturrizky.github.io/adl-angular-ui"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/cdk": "^15.0.1",
