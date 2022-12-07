@@ -11,7 +11,7 @@
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
-    "build-lib": "ng build --project=ng-ui && cd ./dist/ng-ui && npm link",
+    "build-lib": "ng build --project=pattern-lib && cd ./dist/pattern-lib && npm link",
     "homepage": "http://wahyufaturrizky.github.io/adl-angular-ui"
   },
   "private": true,

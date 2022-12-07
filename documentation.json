@@ -484,13 +484,13 @@
     "modules": [
         {
             "name": "PatternLibModule",
-            "id": "module-PatternLibModule-b03f47fb8352e3c5e2d288f68d38ae21b522d75ca1009c65e43fe7ea589dfe47a26733ee460a6417eee3f7efc9b089167b9920adfc731f5481b21af4ad6391a7",
+            "id": "module-PatternLibModule-98e4b494b52029314bb67794af3bf47069a310c92f4bcc65bab1971346f22f88784c28e9c703c1a69523b8a3e29d6680b34aaaa57c81f0d389d3b3ac3fc9a3a7",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/pattern-lib/src/lib/pattern-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { PatternLibComponent } from './pattern-lib.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CommonModule } from '@angular/common';\nimport { MatButtonModule } from '@angular/material/button';\n\n@NgModule({\n  declarations: [PatternLibComponent, ButtonComponent],\n  imports: [CommonModule, MatButtonModule],\n  exports: [PatternLibComponent, ButtonComponent],\n})\nexport class PatternLibModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { ButtonComponent } from './button/button.component';\n\n@NgModule({\n  declarations: [ButtonComponent],\n  imports: [MatButtonModule],\n  exports: [ButtonComponent, MatButtonModule],\n})\nexport class PatternLibModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -501,9 +501,6 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
-                        },
-                        {
-                            "name": "PatternLibComponent"
                         }
                     ]
                 },
@@ -513,11 +510,7 @@
                 },
                 {
                     "type": "exports",
-                    "elements": [
-                        {
-                            "name": "PatternLibComponent"
-                        }
-                    ]
+                    "elements": []
                 },
                 {
                     "type": "bootstrap",
@@ -626,6 +619,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "stories/BasicButton.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -641,16 +644,6 @@
                 "deprecationMessage": "",
                 "type": "Story<Button>",
                 "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",

@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
-import { PatternLibComponent } from './pattern-lib.component';
-import { ButtonComponent } from './button/button.component';
-import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
-  declarations: [PatternLibComponent, ButtonComponent],
-  imports: [CommonModule, MatButtonModule],
-  exports: [PatternLibComponent, ButtonComponent],
+  declarations: [ButtonComponent],
+  imports: [MatButtonModule],
+  exports: [ButtonComponent],
 })
 export class PatternLibModule {}
