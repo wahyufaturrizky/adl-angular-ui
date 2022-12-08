@@ -12,11 +12,11 @@ export class ButtonComponent implements OnInit {
   @Input() label: string | null = 'Text goes here';
   @Input() color: ThemePalette = 'primary';
   @Input() disabled: boolean = false;
-  @Output() eventChange: EventEmitter<any> = new EventEmitter();
+  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();
 
   ngOnInit(): void {}
 
-  onEventChange(event: MouseEvent) {
+  onEventChange(event: Event) {
     this.eventChange.emit(event);
   }
 }
