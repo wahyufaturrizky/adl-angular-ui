@@ -11,6 +11,10 @@ import { ButtonStrokedComponent } from './button-stroked/button-stroked.componen
 import { ButtonComponent } from './button/button.component';
 import { ButtonMiniFabComponent } from './button-mini-fab/button-mini-fab.component';
 import { ButtonExtendedFabComponent } from './button-extended-fab/button-extended-fab.component';
+import { MatBadgeModule } from '@angular/material/badge';
+import { BadgeTextComponent } from './badge-text/badge-text.component';
+import { BadgeButtonComponent } from './badge-button/badge-button.component';
+import { BadgeIconComponent } from './badge-icon/badge-icon.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +26,11 @@ import { ButtonExtendedFabComponent } from './button-extended-fab/button-extende
     ButtonFabComponent,
     ButtonMiniFabComponent,
     ButtonExtendedFabComponent,
+    BadgeTextComponent,
+    BadgeButtonComponent,
+    BadgeIconComponent,
   ],
-  imports: [MatButtonModule, MatIconModule, MatTooltipModule],
+  imports: [MatButtonModule, MatIconModule, MatTooltipModule, MatBadgeModule],
   exports: [
     ButtonComponent,
     ButtonRaisedComponent,
