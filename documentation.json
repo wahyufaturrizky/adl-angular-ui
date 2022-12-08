@@ -168,7 +168,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-b28f66b6502d9feff4ae38b2f616a3b909119371dfd3cd0ce769a3a27a4e1eb20c42850fbe827e929c775cf64aa04fdf5e469e73503b13e146c2162a7836776f-1",
+            "id": "component-ButtonComponent-0107496c620f721a8913a1d2e494b5736d8ed26c2edd69074351c6dfbda6f1ea84cae3182cd6c3ce9dbd3bf1b3404d3af057d5edb47d0bb2983cffa344ab3ca6-1",
             "file": "projects/pattern-lib/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -216,11 +216,11 @@
             "outputsClass": [
                 {
                     "name": "eventChange",
-                    "defaultValue": "new EventEmitter()",
+                    "defaultValue": "new EventEmitter<MouseEvent>()",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "EventEmitter<any>"
+                    "type": "EventEmitter<MouseEvent>"
                 }
             ],
             "propertiesClass": [],
@@ -231,7 +231,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 18,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -240,7 +240,7 @@
                     "args": [
                         {
                             "name": "event",
-                            "type": "any",
+                            "type": "MouseEvent",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -248,13 +248,13 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 19,
+                    "line": 20,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
                             "name": "event",
-                            "type": "any",
+                            "type": "MouseEvent",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -271,7 +271,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<any> = new EventEmitter();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: any) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<MouseEvent> =\n    new EventEmitter<MouseEvent>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: MouseEvent) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -295,6 +295,46 @@
             "duplicateId": 1,
             "duplicateName": "ButtonComponent-1",
             "templateData": "<button\n  mat-button\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  (click)=\"onEventChange($event)\"\n>\n  {{ label }}\n</button>\n"
+        },
+        {
+            "name": "ButtonRaisedComponent",
+            "id": "component-ButtonRaisedComponent-a41c248fae0c7de72545d30d00204da9f4853839fe7958c95012148aaf6670966d0d006ed0813a292084055a407ab1ffbea5041cb020d98ff5db720caee73d7b",
+            "file": "projects/pattern-lib/src/lib/button-raised/button-raised.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-button-raised",
+            "styleUrls": [
+                "./button-raised.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-raised.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'pl-button-raised',\n  templateUrl: './button-raised.component.html',\n  styleUrls: ['./button-raised.component.scss']\n})\nexport class ButtonRaisedComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-raised.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>button-raised works!</p>\n"
         },
         {
             "name": "HeaderComponent",
@@ -484,13 +524,13 @@
     "modules": [
         {
             "name": "PatternLibModule",
-            "id": "module-PatternLibModule-98e4b494b52029314bb67794af3bf47069a310c92f4bcc65bab1971346f22f88784c28e9c703c1a69523b8a3e29d6680b34aaaa57c81f0d389d3b3ac3fc9a3a7",
+            "id": "module-PatternLibModule-67a49f6b0c76c3b277b91a0b98ca22697ff08dae642110da41222a97a594ceaabad692db070be09bfb9578ad0819eaa61d981e3f70dba219313d85bc1e4e2734",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/pattern-lib/src/lib/pattern-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { ButtonComponent } from './button/button.component';\n\n@NgModule({\n  declarations: [ButtonComponent],\n  imports: [MatButtonModule],\n  exports: [ButtonComponent, MatButtonModule],\n})\nexport class PatternLibModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { ButtonComponent } from './button/button.component';\nimport { ButtonRaisedComponent } from './button-raised/button-raised.component';\n\n@NgModule({\n  declarations: [ButtonComponent, ButtonRaisedComponent],\n  imports: [MatButtonModule],\n  exports: [ButtonComponent],\n})\nexport class PatternLibModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -501,6 +541,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ButtonRaisedComponent"
                         }
                     ]
                 },
@@ -619,16 +662,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "stories/BasicButton.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -644,6 +677,16 @@
                 "deprecationMessage": "",
                 "type": "Story<Button>",
                 "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -805,9 +848,18 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
+            {
+                "filePath": "projects/pattern-lib/src/lib/button-raised/button-raised.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonRaisedComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
             {
                 "filePath": "projects/pattern-lib/src/lib/button/button.component.ts",
                 "type": "component",

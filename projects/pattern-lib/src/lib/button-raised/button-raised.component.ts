@@ -2,11 +2,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 
 @Component({
-  selector: 'pl-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
+  selector: 'pl-button-raised',
+  templateUrl: './button-raised.component.html',
+  styleUrls: ['./button-raised.component.scss'],
 })
-export class ButtonComponent implements OnInit {
+export class ButtonRaisedComponent implements OnInit {
   constructor() {}
 
   @Input() label: string | null = 'Text goes here';
