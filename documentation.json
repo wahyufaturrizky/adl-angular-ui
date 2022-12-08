@@ -168,7 +168,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-159b07b76983ede98cd584efa1e6bdc82417cb5231142c8cd3e0d090fc41e38558b99dfe8e8e4dd51d2b99e391b76918f000e170678f179d1c2ce8dc6a60b52f-1",
+            "id": "component-ButtonComponent-342e2401546bd2210f44d8ac444942ac8ea8cdb965276cfcee412dc15e32cedbe343c4c41d0680f0e7fc818a1a8ad10fea88b5187dd96cf08a92ad16d70fbc35-1",
             "file": "projects/pattern-lib/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -216,11 +216,11 @@
             "outputsClass": [
                 {
                     "name": "eventChange",
-                    "defaultValue": "new EventEmitter()",
+                    "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "EventEmitter<any>"
+                    "type": "EventEmitter<Event>"
                 }
             ],
             "propertiesClass": [],
@@ -240,7 +240,7 @@
                     "args": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -254,7 +254,7 @@
                     "jsdoctags": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -271,7 +271,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<any> = new EventEmitter();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: MouseEvent) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n})\nexport class ButtonComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -298,7 +298,7 @@
         },
         {
             "name": "ButtonFlatComponent",
-            "id": "component-ButtonFlatComponent-68f2a2267a8c77548108df7a71123d64ea45f09ebba8d8fc6262964e444a2cb79c8e07ee12bfac816474440e9ed0d62ebc2170516c1442348f3126511b1d258b",
+            "id": "component-ButtonFlatComponent-ec0b625e5b297853f6a4b147df6ca0f1ee430d18fe72fb02e00edd269eaaf61e0c79c41211c436b4382fb7e0fff0748aba879a90f3b6b546db8068ddd78d763a",
             "file": "projects/pattern-lib/src/lib/button-flat/button-flat.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -346,11 +346,11 @@
             "outputsClass": [
                 {
                     "name": "eventChange",
-                    "defaultValue": "new EventEmitter()",
+                    "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "EventEmitter<any>"
+                    "type": "EventEmitter<Event>"
                 }
             ],
             "propertiesClass": [],
@@ -370,7 +370,7 @@
                     "args": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -384,7 +384,7 @@
                     "jsdoctags": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -401,7 +401,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-flat',\n  templateUrl: './button-flat.component.html',\n  styleUrls: ['./button-flat.component.scss'],\n})\nexport class ButtonFlatComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<any> = new EventEmitter();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: MouseEvent) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-flat',\n  templateUrl: './button-flat.component.html',\n  styleUrls: ['./button-flat.component.scss'],\n})\nexport class ButtonFlatComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -424,8 +424,153 @@
             "templateData": "<button\n  mat-flat-button\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  (click)=\"onEventChange($event)\"\n>\n  {{ label }}\n</button>\n"
         },
         {
+            "name": "ButtonIconComponent",
+            "id": "component-ButtonIconComponent-113f3ececa17a80eabd3056317634d03ec42050123965eba98ffab608dfcb5321ad2844ee1bb157186f3b414089f1986c2e7cd2d9fb6e535212502ffbda31660",
+            "file": "projects/pattern-lib/src/lib/button-icon/button-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-button-icon",
+            "styleUrls": [
+                "./button-icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "'Example icon-button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "ThemePalette",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "iconName",
+                    "defaultValue": "'Favorite'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "matTooltip",
+                    "defaultValue": "'Tooltip text goes here'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "eventChange",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<Event>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onEventChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-icon',\n  templateUrl: './button-icon.component.html',\n  styleUrls: ['./button-icon.component.scss'],\n})\nexport class ButtonIconComponent implements OnInit {\n  constructor() {}\n\n  @Input() iconName: string | null = 'Favorite';\n  @Input() ariaLabel: string | null = 'Example icon-button';\n  @Input() color: ThemePalette = 'primary';\n  @Input() matTooltip: string = 'Tooltip text goes here';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button\n  mat-icon-button\n  [matTooltip]=\"matTooltip\"\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  [ariaLabel]=\"ariaLabel\"\n  (click)=\"onEventChange($event)\"\n>\n  <mat-icon>{{ iconName }}</mat-icon>\n</button>\n"
+        },
+        {
             "name": "ButtonRaisedComponent",
-            "id": "component-ButtonRaisedComponent-542ada92e419d6b063de630e3b9b2b21f4b483dcc946b8578dafe56d21adcc718486bde2b37aafcc3a2a83d63756398ce3c883c9419793667668636194d65c6f",
+            "id": "component-ButtonRaisedComponent-31bfda57230aec8ef189420d581b92858a672e1fc6e483f0775685d6cc429d85282a298b076359517e24d623db224ddd6a79d02219fc2c3ce4edafbc1c26acd7",
             "file": "projects/pattern-lib/src/lib/button-raised/button-raised.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -473,11 +618,11 @@
             "outputsClass": [
                 {
                     "name": "eventChange",
-                    "defaultValue": "new EventEmitter()",
+                    "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "EventEmitter<any>"
+                    "type": "EventEmitter<Event>"
                 }
             ],
             "propertiesClass": [],
@@ -497,7 +642,7 @@
                     "args": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -511,7 +656,7 @@
                     "jsdoctags": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -528,7 +673,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-raised',\n  templateUrl: './button-raised.component.html',\n  styleUrls: ['./button-raised.component.scss'],\n})\nexport class ButtonRaisedComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<any> = new EventEmitter();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: MouseEvent) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-raised',\n  templateUrl: './button-raised.component.html',\n  styleUrls: ['./button-raised.component.scss'],\n})\nexport class ButtonRaisedComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -552,7 +697,7 @@
         },
         {
             "name": "ButtonStrokedComponent",
-            "id": "component-ButtonStrokedComponent-764ae18d1643f32b84bf133076bf39f6088a0d6c1e624bea513aa413dae53c843d58fc8082c1ccfa70c02a38101e21c646fa409bdba805b7ea0c159924bb78a2",
+            "id": "component-ButtonStrokedComponent-4bae77ffbc22db2836f987379dbb55a63232f18c897a396411d69aa7ac6712e0e0644bcbfe707617e91c4590d5626c1deeda480775a5a69804837e5b6f28aa77",
             "file": "projects/pattern-lib/src/lib/button-stroked/button-stroked.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -600,11 +745,11 @@
             "outputsClass": [
                 {
                     "name": "eventChange",
-                    "defaultValue": "new EventEmitter()",
+                    "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 15,
-                    "type": "EventEmitter<any>"
+                    "type": "EventEmitter<Event>"
                 }
             ],
             "propertiesClass": [],
@@ -624,7 +769,7 @@
                     "args": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -638,7 +783,7 @@
                     "jsdoctags": [
                         {
                             "name": "event",
-                            "type": "MouseEvent",
+                            "type": "Event",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -655,7 +800,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-stroked',\n  templateUrl: './button-stroked.component.html',\n  styleUrls: ['./button-stroked.component.scss'],\n})\nexport class ButtonStrokedComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<any> = new EventEmitter();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: MouseEvent) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-stroked',\n  templateUrl: './button-stroked.component.html',\n  styleUrls: ['./button-stroked.component.scss'],\n})\nexport class ButtonStrokedComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input() color: ThemePalette = 'primary';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -865,13 +1010,13 @@
     "modules": [
         {
             "name": "PatternLibModule",
-            "id": "module-PatternLibModule-4627807073c5c0fe610bb29a73311f6a4a048501e4aa955bf4e342a16588b2abe190f10fb9edf46b660e0b51df5e964c8c633e44d642e70890c9783aae293c2a",
+            "id": "module-PatternLibModule-604088bd6d9ef3bc03e4e8aa6dbf319f15c5192cc0c05ad182f6584a0aa4adc90b66de991d8b65e165b427c8e9ee5026306d6ecaf86ce8e023a23593e7519bec",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/pattern-lib/src/lib/pattern-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { ButtonComponent } from './button/button.component';\nimport { ButtonRaisedComponent } from './button-raised/button-raised.component';\nimport { ButtonFlatComponent } from './button-flat/button-flat.component';\nimport { ButtonStrokedComponent } from './button-stroked/button-stroked.component';\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n  ],\n  imports: [MatButtonModule],\n  exports: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n  ],\n})\nexport class PatternLibModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatTooltipModule } from '@angular/material/tooltip';\n\nimport { ButtonComponent } from './button/button.component';\nimport { ButtonRaisedComponent } from './button-raised/button-raised.component';\nimport { ButtonFlatComponent } from './button-flat/button-flat.component';\nimport { ButtonStrokedComponent } from './button-stroked/button-stroked.component';\nimport { ButtonIconComponent } from './button-icon/button-icon.component';\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n    ButtonIconComponent,\n  ],\n  imports: [MatButtonModule, MatIconModule, MatTooltipModule],\n  exports: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n    ButtonIconComponent,\n  ],\n})\nexport class PatternLibModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -885,6 +1030,9 @@
                         },
                         {
                             "name": "ButtonFlatComponent"
+                        },
+                        {
+                            "name": "ButtonIconComponent"
                         },
                         {
                             "name": "ButtonRaisedComponent"
@@ -903,6 +1051,9 @@
                     "elements": [
                         {
                             "name": "ButtonFlatComponent"
+                        },
+                        {
+                            "name": "ButtonIconComponent"
                         },
                         {
                             "name": "ButtonRaisedComponent"
@@ -940,6 +1091,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/ButtonFlat.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Icon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonIcon.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1079,11 +1240,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/ButtonRaised.stories.tsx",
+                "file": "stories/ButtonIcon.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ButtonRaisedComponent>",
-                "defaultValue": "(\n  args: ButtonRaisedComponent\n) => ({\n  component: ButtonRaisedComponent,\n  props: args,\n})"
+                "type": "Story<ButtonIconComponent>",
+                "defaultValue": "(args: ButtonIconComponent) => ({\n  component: ButtonIconComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1094,6 +1255,16 @@
                 "deprecationMessage": "",
                 "type": "Story<ButtonStrokedComponent>",
                 "defaultValue": "(\n  args: ButtonStrokedComponent\n) => ({\n  component: ButtonStrokedComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonRaised.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonRaisedComponent>",
+                "defaultValue": "(\n  args: ButtonRaisedComponent\n) => ({\n  component: ButtonRaisedComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1162,6 +1333,28 @@
                     "deprecationMessage": "",
                     "type": "Story<ButtonFlatComponent>",
                     "defaultValue": "(args: ButtonFlatComponent) => ({\n  component: ButtonFlatComponent,\n  props: args,\n})"
+                }
+            ],
+            "stories/ButtonIcon.stories.tsx": [
+                {
+                    "name": "Icon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonIcon.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonIcon.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonIconComponent>",
+                    "defaultValue": "(args: ButtonIconComponent) => ({\n  component: ButtonIconComponent,\n  props: args,\n})"
                 }
             ],
             "stories/Button.stories.ts": [
@@ -1344,6 +1537,15 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/pattern-lib/src/lib/button-icon/button-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/pattern-lib/src/lib/button-raised/button-raised.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1470,6 +1672,26 @@
             },
             {
                 "filePath": "stories/ButtonFlat.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonIcon.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonIcon.stories.tsx",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

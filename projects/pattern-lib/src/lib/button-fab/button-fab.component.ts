@@ -2,11 +2,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 
 @Component({
-  selector: 'pl-button-icon',
-  templateUrl: './button-icon.component.html',
-  styleUrls: ['./button-icon.component.scss'],
+  selector: 'pl-button-fab',
+  templateUrl: './button-fab.component.html',
+  styleUrls: ['./button-fab.component.scss'],
 })
-export class ButtonIconComponent implements OnInit {
+export class ButtonFabComponent implements OnInit {
   constructor() {}
 
   @Input() iconName: string | null = 'favorite';

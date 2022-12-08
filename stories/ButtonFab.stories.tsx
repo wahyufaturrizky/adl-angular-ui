@@ -3,11 +3,11 @@ import { moduleMetadata } from "@storybook/angular";
 import { Meta, Story } from "@storybook/angular/types-6-0";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatIconModule } from "@angular/material/icon";
-import { ButtonIconComponent } from "projects/pattern-lib/src/lib/button-icon/button-icon.component";
+import { ButtonFabComponent } from "projects/pattern-lib/src/lib/button-fab/button-fab.component";
 
 export default {
   title: "ADL ANGULAR MATERIAL/Buttons",
-  component: ButtonIconComponent,
+  component: ButtonFabComponent,
   argTypes: {
     label: { control: "text" },
     color: {
@@ -24,13 +24,13 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<ButtonIconComponent> = (args: ButtonIconComponent) => ({
-  component: ButtonIconComponent,
+const Template: Story<ButtonFabComponent> = (args: ButtonFabComponent) => ({
+  component: ButtonFabComponent,
   props: args,
 });
 
-export const Icon = Template.bind({});
-Icon.args = {
+export const Fab = Template.bind({});
+Fab.args = {
   iconName: "favorite",
   disabled: false,
   color: "primary",
