@@ -1,0 +1,12 @@
+<button
+  mat-fab
+  extended
+  [matTooltip]="matTooltip"
+  [color]="color"
+  [disabled]="disabled"
+  [ariaLabel]="ariaLabel"
+  (click)="onEventChange($event)"
+>
+  <mat-icon>{{ iconName }}</mat-icon>
+  {{ label }}
+</button>

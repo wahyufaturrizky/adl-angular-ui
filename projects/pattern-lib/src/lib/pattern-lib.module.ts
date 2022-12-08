@@ -10,6 +10,7 @@ import { ButtonRaisedComponent } from './button-raised/button-raised.component';
 import { ButtonStrokedComponent } from './button-stroked/button-stroked.component';
 import { ButtonComponent } from './button/button.component';
 import { ButtonMiniFabComponent } from './button-mini-fab/button-mini-fab.component';
+import { ButtonExtendedFabComponent } from './button-extended-fab/button-extended-fab.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ButtonMiniFabComponent } from './button-mini-fab/button-mini-fab.compon
     ButtonIconComponent,
     ButtonFabComponent,
     ButtonMiniFabComponent,
+    ButtonExtendedFabComponent,
   ],
   imports: [MatButtonModule, MatIconModule, MatTooltipModule],
   exports: [
