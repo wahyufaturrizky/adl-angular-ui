@@ -43,6 +43,220 @@
     "directives": [],
     "components": [
         {
+            "name": "BadgeButtonComponent",
+            "id": "component-BadgeButtonComponent-fcd16501a6f05e3977d8c1b66965efe34d8bc3cfc70dcdf8384478cfe4745d7fa2cfdf7ff5538a6cf818113f3402f2dd25ebdf417495df8892a5ed096b81a699",
+            "file": "projects/pattern-lib/src/lib/badge-button/badge-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-badge-button",
+            "styleUrls": [
+                "./badge-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./badge-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'pl-badge-button',\n  templateUrl: './badge-button.component.html',\n  styleUrls: ['./badge-button.component.scss']\n})\nexport class BadgeButtonComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./badge-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>badge-button works!</p>\n"
+        },
+        {
+            "name": "BadgeIconComponent",
+            "id": "component-BadgeIconComponent-be9c825ea607ff3112ac6b104711ff6c8ae9a492f5d85d6872b849f3d9126c7feb190e6396ca77e8bea327d3c1ddf4ea665d194350e85e855f5dfef16349820b",
+            "file": "projects/pattern-lib/src/lib/badge-icon/badge-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-badge-icon",
+            "styleUrls": [
+                "./badge-icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./badge-icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'pl-badge-icon',\n  templateUrl: './badge-icon.component.html',\n  styleUrls: ['./badge-icon.component.scss']\n})\nexport class BadgeIconComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./badge-icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>badge-icon works!</p>\n"
+        },
+        {
+            "name": "BadgeTextComponent",
+            "id": "component-BadgeTextComponent-0f0f1623905b1793fdc3c58ed400686128114b33e9864677d0f4cc34e6b6d2e53434a5302e9978691abeae5eca13b4df8de55bb65dbe96417cbf35cd335130bd",
+            "file": "projects/pattern-lib/src/lib/badge-text/badge-text.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-badge-text",
+            "styleUrls": [
+                "./badge-text.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./badge-text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "'Text goes here'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadge",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string | number | undefined | null",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadgeColor",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "ThemePalette",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadgeDescription",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadgeHidden",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadgeOverlap",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadgePosition",
+                    "defaultValue": "'above after'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "MatBadgePosition",
+                    "decorators": []
+                },
+                {
+                    "name": "matBadgeSize",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "MatBadgeSize",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { MatBadgePosition, MatBadgeSize } from '@angular/material/badge';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-badge-text',\n  templateUrl: './badge-text.component.html',\n  styleUrls: ['./badge-text.component.scss'],\n})\nexport class BadgeTextComponent implements OnInit {\n  constructor() {}\n\n  @Input() label: string | null = 'Text goes here';\n  @Input('matBadgeColor') color: ThemePalette = 'primary';\n  @Input('matBadge') matBadge: string | number | undefined | null;\n  @Input('matBadgeDescription') description: string = '';\n  @Input('matBadgeHidden') hidden: boolean = false;\n  @Input('matBadgeOverlap') overlap: boolean = false;\n  @Input('matBadgePosition') position: MatBadgePosition = 'above after';\n  @Input('matBadgeSize') size: MatBadgeSize = 'medium';\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./badge-text.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 10
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\n  [matBadgeDescription]=\"description\"\n  [matBadge]=\"matBadge\"\n  matBadgeOverlap=\"false\"\n  [matBadgeHidden]=\"hidden\"\n  class=\"demo-section\"\n  [matBadgePosition]=\"position\"\n  [matBadgeOverlap]=\"overlap\"\n  [matBadgeSize]=\"size\"\n>\n  {{ label }}\n</div>\n"
+        },
+        {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
             "file": "stories/button.component.ts",
@@ -297,6 +511,305 @@
             "templateData": "<button\n  mat-button\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  (click)=\"onEventChange($event)\"\n>\n  {{ label }}\n</button>\n"
         },
         {
+            "name": "ButtonExtendedFabComponent",
+            "id": "component-ButtonExtendedFabComponent-55fab19d00ef4d9df20168523d40caa2db4e797b5a99adada80e860b86e1a775204584ab11eda1e92d28c93e53a0bf42aeaba0b37746129f7fc66fb4a12f5c8d",
+            "file": "projects/pattern-lib/src/lib/button-extended-fab/button-extended-fab.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-button-extended-fab",
+            "styleUrls": [
+                "./button-extended-fab.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-extended-fab.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "'Example icon-button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "ThemePalette",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "iconName",
+                    "defaultValue": "'favorite'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Text goes here'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "matTooltip",
+                    "defaultValue": "'Tooltip text goes here'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "eventChange",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter<Event>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onEventChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-extended-fab',\n  templateUrl: './button-extended-fab.component.html',\n  styleUrls: ['./button-extended-fab.component.scss'],\n})\nexport class ButtonExtendedFabComponent implements OnInit {\n  constructor() {}\n\n  @Input() iconName: string | null = 'favorite';\n  @Input() label: string | null = 'Text goes here';\n  @Input() ariaLabel: string | null = 'Example icon-button';\n  @Input() color: ThemePalette = 'primary';\n  @Input() matTooltip: string = 'Tooltip text goes here';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-extended-fab.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button\n  mat-fab\n  extended\n  [matTooltip]=\"matTooltip\"\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  [ariaLabel]=\"ariaLabel\"\n  (click)=\"onEventChange($event)\"\n>\n  <mat-icon>{{ iconName }}</mat-icon>\n  {{ label }}\n</button>\n"
+        },
+        {
+            "name": "ButtonFabComponent",
+            "id": "component-ButtonFabComponent-998abc4283e3784acc637e0af399493a4e23220c6b3e30cf70d66f8d49d10549383f8ace65489a7e97f91155127b914fe4d9bcbeaec778f94574c2cd3a924690",
+            "file": "projects/pattern-lib/src/lib/button-fab/button-fab.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-button-fab",
+            "styleUrls": [
+                "./button-fab.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-fab.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "'Example icon-button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "ThemePalette",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "iconName",
+                    "defaultValue": "'favorite'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "matTooltip",
+                    "defaultValue": "'Tooltip text goes here'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "eventChange",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<Event>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onEventChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-fab',\n  templateUrl: './button-fab.component.html',\n  styleUrls: ['./button-fab.component.scss'],\n})\nexport class ButtonFabComponent implements OnInit {\n  constructor() {}\n\n  @Input() iconName: string | null = 'favorite';\n  @Input() ariaLabel: string | null = 'Example icon-button';\n  @Input() color: ThemePalette = 'primary';\n  @Input() matTooltip: string = 'Tooltip text goes here';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-fab.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button\n  mat-fab\n  [matTooltip]=\"matTooltip\"\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  [ariaLabel]=\"ariaLabel\"\n  (click)=\"onEventChange($event)\"\n>\n  <mat-icon>{{ iconName }}</mat-icon>\n</button>\n"
+        },
+        {
             "name": "ButtonFlatComponent",
             "id": "component-ButtonFlatComponent-ec0b625e5b297853f6a4b147df6ca0f1ee430d18fe72fb02e00edd269eaaf61e0c79c41211c436b4382fb7e0fff0748aba879a90f3b6b546db8068ddd78d763a",
             "file": "projects/pattern-lib/src/lib/button-flat/button-flat.component.ts",
@@ -425,7 +938,7 @@
         },
         {
             "name": "ButtonIconComponent",
-            "id": "component-ButtonIconComponent-113f3ececa17a80eabd3056317634d03ec42050123965eba98ffab608dfcb5321ad2844ee1bb157186f3b414089f1986c2e7cd2d9fb6e535212502ffbda31660",
+            "id": "component-ButtonIconComponent-b8886053c9d53a6281504276395cfdbec22182434091232e4ee664d2ab8aec590253530b7e35a8d99add38da23d06fb0a8373fd171f8d26b43b0d470f2644973",
             "file": "projects/pattern-lib/src/lib/button-icon/button-icon.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -471,7 +984,7 @@
                 },
                 {
                     "name": "iconName",
-                    "defaultValue": "'Favorite'",
+                    "defaultValue": "'favorite'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 12,
@@ -546,7 +1059,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-icon',\n  templateUrl: './button-icon.component.html',\n  styleUrls: ['./button-icon.component.scss'],\n})\nexport class ButtonIconComponent implements OnInit {\n  constructor() {}\n\n  @Input() iconName: string | null = 'Favorite';\n  @Input() ariaLabel: string | null = 'Example icon-button';\n  @Input() color: ThemePalette = 'primary';\n  @Input() matTooltip: string = 'Tooltip text goes here';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-icon',\n  templateUrl: './button-icon.component.html',\n  styleUrls: ['./button-icon.component.scss'],\n})\nexport class ButtonIconComponent implements OnInit {\n  constructor() {}\n\n  @Input() iconName: string | null = 'favorite';\n  @Input() ariaLabel: string | null = 'Example icon-button';\n  @Input() color: ThemePalette = 'primary';\n  @Input() matTooltip: string = 'Tooltip text goes here';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -567,6 +1080,151 @@
                 "OnInit"
             ],
             "templateData": "<button\n  mat-icon-button\n  [matTooltip]=\"matTooltip\"\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  [ariaLabel]=\"ariaLabel\"\n  (click)=\"onEventChange($event)\"\n>\n  <mat-icon>{{ iconName }}</mat-icon>\n</button>\n"
+        },
+        {
+            "name": "ButtonMiniFabComponent",
+            "id": "component-ButtonMiniFabComponent-bfc91f5396f75a516b811b213f7146e29e9480235f50b7acb02825f03548a43bc88f169853fb31860bd31ed2f4ae9a34b47832c04e6d37875db872ebbd17dcf8",
+            "file": "projects/pattern-lib/src/lib/button-mini-fab/button-mini-fab.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "pl-button-mini-fab",
+            "styleUrls": [
+                "./button-mini-fab.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-mini-fab.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "'Example icon-button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "ThemePalette",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "iconName",
+                    "defaultValue": "'favorite'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "matTooltip",
+                    "defaultValue": "'Tooltip text goes here'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "eventChange",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<Event>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onEventChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'pl-button-mini-fab',\n  templateUrl: './button-mini-fab.component.html',\n  styleUrls: ['./button-mini-fab.component.scss'],\n})\nexport class ButtonMiniFabComponent implements OnInit {\n  constructor() {}\n\n  @Input() iconName: string | null = 'favorite';\n  @Input() ariaLabel: string | null = 'Example icon-button';\n  @Input() color: ThemePalette = 'primary';\n  @Input() matTooltip: string = 'Tooltip text goes here';\n  @Input() disabled: boolean = false;\n  @Output() eventChange: EventEmitter<Event> = new EventEmitter<Event>();\n\n  ngOnInit(): void {}\n\n  onEventChange(event: Event) {\n    this.eventChange.emit(event);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-mini-fab.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button\n  mat-mini-fab\n  [matTooltip]=\"matTooltip\"\n  [color]=\"color\"\n  [disabled]=\"disabled\"\n  [ariaLabel]=\"ariaLabel\"\n  (click)=\"onEventChange($event)\"\n>\n  <mat-icon>{{ iconName }}</mat-icon>\n</button>\n"
         },
         {
             "name": "ButtonRaisedComponent",
@@ -1010,13 +1668,13 @@
     "modules": [
         {
             "name": "PatternLibModule",
-            "id": "module-PatternLibModule-604088bd6d9ef3bc03e4e8aa6dbf319f15c5192cc0c05ad182f6584a0aa4adc90b66de991d8b65e165b427c8e9ee5026306d6ecaf86ce8e023a23593e7519bec",
+            "id": "module-PatternLibModule-515ec2046af1f5cfe66bd5fc30ebeb7a4471dfda7951acf87c22059d3794731113f7fed78b749a2d73bb1279da4e135085dc998eb18225aee7808a17e48fe397",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/pattern-lib/src/lib/pattern-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatTooltipModule } from '@angular/material/tooltip';\n\nimport { ButtonComponent } from './button/button.component';\nimport { ButtonRaisedComponent } from './button-raised/button-raised.component';\nimport { ButtonFlatComponent } from './button-flat/button-flat.component';\nimport { ButtonStrokedComponent } from './button-stroked/button-stroked.component';\nimport { ButtonIconComponent } from './button-icon/button-icon.component';\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n    ButtonIconComponent,\n  ],\n  imports: [MatButtonModule, MatIconModule, MatTooltipModule],\n  exports: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n    ButtonIconComponent,\n  ],\n})\nexport class PatternLibModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatTooltipModule } from '@angular/material/tooltip';\n\nimport { ButtonFabComponent } from './button-fab/button-fab.component';\nimport { ButtonFlatComponent } from './button-flat/button-flat.component';\nimport { ButtonIconComponent } from './button-icon/button-icon.component';\nimport { ButtonRaisedComponent } from './button-raised/button-raised.component';\nimport { ButtonStrokedComponent } from './button-stroked/button-stroked.component';\nimport { ButtonComponent } from './button/button.component';\nimport { ButtonMiniFabComponent } from './button-mini-fab/button-mini-fab.component';\nimport { ButtonExtendedFabComponent } from './button-extended-fab/button-extended-fab.component';\nimport { MatBadgeModule } from '@angular/material/badge';\nimport { BadgeTextComponent } from './badge-text/badge-text.component';\nimport { BadgeButtonComponent } from './badge-button/badge-button.component';\nimport { BadgeIconComponent } from './badge-icon/badge-icon.component';\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n    ButtonIconComponent,\n    ButtonFabComponent,\n    ButtonMiniFabComponent,\n    ButtonExtendedFabComponent,\n    BadgeTextComponent,\n    BadgeButtonComponent,\n    BadgeIconComponent,\n  ],\n  imports: [MatButtonModule, MatIconModule, MatTooltipModule, MatBadgeModule],\n  exports: [\n    ButtonComponent,\n    ButtonRaisedComponent,\n    ButtonStrokedComponent,\n    ButtonFlatComponent,\n    ButtonIconComponent,\n    ButtonFabComponent,\n    ButtonMiniFabComponent,\n  ],\n})\nexport class PatternLibModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1026,13 +1684,31 @@
                     "type": "declarations",
                     "elements": [
                         {
+                            "name": "BadgeButtonComponent"
+                        },
+                        {
+                            "name": "BadgeIconComponent"
+                        },
+                        {
+                            "name": "BadgeTextComponent"
+                        },
+                        {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ButtonExtendedFabComponent"
+                        },
+                        {
+                            "name": "ButtonFabComponent"
                         },
                         {
                             "name": "ButtonFlatComponent"
                         },
                         {
                             "name": "ButtonIconComponent"
+                        },
+                        {
+                            "name": "ButtonMiniFabComponent"
                         },
                         {
                             "name": "ButtonRaisedComponent"
@@ -1050,10 +1726,16 @@
                     "type": "exports",
                     "elements": [
                         {
+                            "name": "ButtonFabComponent"
+                        },
+                        {
                             "name": "ButtonFlatComponent"
                         },
                         {
                             "name": "ButtonIconComponent"
+                        },
+                        {
+                            "name": "ButtonMiniFabComponent"
                         },
                         {
                             "name": "ButtonRaisedComponent"
@@ -1081,6 +1763,26 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/ButtonBasic.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ExtendedFab",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonExtendedFab.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Fab",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonFab.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1157,6 +1859,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "MiniFab",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonMiniFab.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1210,6 +1922,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "stories/BadgeText.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<BadgeTextComponent>",
+                "defaultValue": "(args: BadgeTextComponent) => ({\n  component: BadgeTextComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1230,6 +1952,26 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "stories/ButtonExtendedFab.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonExtendedFabComponent>",
+                "defaultValue": "(\n  args: ButtonExtendedFabComponent\n) => ({\n  component: ButtonExtendedFabComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonFab.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonFabComponent>",
+                "defaultValue": "(args: ButtonFabComponent) => ({\n  component: ButtonFabComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "stories/ButtonFlat.stories.tsx",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1245,6 +1987,16 @@
                 "deprecationMessage": "",
                 "type": "Story<ButtonIconComponent>",
                 "defaultValue": "(args: ButtonIconComponent) => ({\n  component: ButtonIconComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/ButtonMiniFab.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonMiniFabComponent>",
+                "defaultValue": "(\n  args: ButtonMiniFabComponent\n) => ({\n  component: ButtonMiniFabComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1285,6 +2037,16 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Text",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/BadgeText.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [],
@@ -1311,6 +2073,50 @@
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
+                }
+            ],
+            "stories/ButtonExtendedFab.stories.tsx": [
+                {
+                    "name": "ExtendedFab",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonExtendedFab.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonExtendedFab.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonExtendedFabComponent>",
+                    "defaultValue": "(\n  args: ButtonExtendedFabComponent\n) => ({\n  component: ButtonExtendedFabComponent,\n  props: args,\n})"
+                }
+            ],
+            "stories/ButtonFab.stories.tsx": [
+                {
+                    "name": "Fab",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonFab.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonFab.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonFabComponent>",
+                    "defaultValue": "(args: ButtonFabComponent) => ({\n  component: ButtonFabComponent,\n  props: args,\n})"
                 }
             ],
             "stories/ButtonFlat.stories.tsx": [
@@ -1473,6 +2279,28 @@
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ],
+            "stories/ButtonMiniFab.stories.tsx": [
+                {
+                    "name": "MiniFab",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonMiniFab.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/ButtonMiniFab.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonMiniFabComponent>",
+                    "defaultValue": "(\n  args: ButtonMiniFabComponent\n) => ({\n  component: ButtonMiniFabComponent,\n  props: args,\n})"
+                }
+            ],
             "stories/ButtonRaised.stories.tsx": [
                 {
                     "name": "Raised",
@@ -1516,6 +2344,28 @@
                     "type": "Story<ButtonStrokedComponent>",
                     "defaultValue": "(\n  args: ButtonStrokedComponent\n) => ({\n  component: ButtonStrokedComponent,\n  props: args,\n})"
                 }
+            ],
+            "stories/BadgeText.stories.tsx": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/BadgeText.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<BadgeTextComponent>",
+                    "defaultValue": "(args: BadgeTextComponent) => ({\n  component: BadgeTextComponent,\n  props: args,\n})"
+                },
+                {
+                    "name": "Text",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/BadgeText.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -1524,9 +2374,54 @@
     },
     "routes": [],
     "coverage": {
-        "count": 2,
+        "count": 1,
         "status": "low",
         "files": [
+            {
+                "filePath": "projects/pattern-lib/src/lib/badge-button/badge-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BadgeButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/pattern-lib/src/lib/badge-icon/badge-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BadgeIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/pattern-lib/src/lib/badge-text/badge-text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BadgeTextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/pattern-lib/src/lib/button-extended-fab/button-extended-fab.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonExtendedFabComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/pattern-lib/src/lib/button-fab/button-fab.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonFabComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
             {
                 "filePath": "projects/pattern-lib/src/lib/button-flat/button-flat.component.ts",
                 "type": "component",
@@ -1541,6 +2436,15 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/pattern-lib/src/lib/button-mini-fab/button-mini-fab.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonMiniFabComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/10",
                 "status": "low"
@@ -1588,6 +2492,26 @@
                 "name": "PatternLibService",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/BadgeText.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/BadgeText.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Text",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1661,6 +2585,46 @@
                 "status": "low"
             },
             {
+                "filePath": "stories/ButtonExtendedFab.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ExtendedFab",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonExtendedFab.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonFab.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Fab",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonFab.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "stories/ButtonFlat.stories.tsx",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -1692,6 +2656,26 @@
             },
             {
                 "filePath": "stories/ButtonIcon.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonMiniFab.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MiniFab",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/ButtonMiniFab.stories.tsx",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
